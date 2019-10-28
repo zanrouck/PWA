@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Planned</title>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href = "../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <body>
+
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-4">
+                    <ul id="nav-ul">
+                      <li><a href = "../index.html">&#128214; Task</a></li>
+                      <li><a class = "active" href="planned.html">&#9745; Planned</a></li>
+                      <li><a href="important.html">&#11088; Important</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-8">
+                    <br>
+                    <br>
+                    <h2>Planned</h2>
+
+                    <div class="input-group mb-3" id="task-input-add">
+                        <form>
+                      <input type="text" class="form-control form-control-lg" id="plan" placeholder="Add Task">
+                  </form>
+              </div>
+                    <!-- Task list and modal trigger -->
+                            </div>
+                    
+                    <ul class="overflow-auto" id = "myUL" data-toggle="modal" data-target="#popUp"></ul>
+                    <button class = "clear">delete</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="popUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Reminder</h5>
+                          </div>
+                          <div class="modal-body">
+                            <form action="/action_page.php" class="form-container">
+                                <label><input type="checkbox" value="">  Later Today</label>
+                                    <br>
+                                <label><input type="checkbox" value="">  Tomorrow</label>
+                                    <br>
+                                <label><input type="checkbox" value="">  Nextweek</label>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Save and close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src = "../js/planned.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
